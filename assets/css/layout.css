@@ -1,0 +1,34 @@
+/* Navegação flutuante, translúcida e independente do fluxo da página */
+:root { --os-ink:#173b52; --os-line:rgba(23,59,82,.12); }
+html { scroll-padding-top:84px; }
+body { padding-left:0; }
+.os-sidebar { position:fixed; z-index:1200; left:18px; bottom:22px; top:auto; width:auto; padding:0; transform:none; background:transparent; color:var(--os-ink); border:0; }
+.menu-toggle { display:flex; width:48px; height:48px; flex-direction:column; align-items:center; justify-content:center; gap:5px; padding:0; border:1px solid rgba(23,59,82,.14); border-radius:50%; background:rgba(255,255,255,.68); box-shadow:0 8px 28px rgba(16,47,66,.13); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); cursor:pointer; transition:background .2s ease, box-shadow .2s ease, transform .2s ease; }
+.menu-toggle:hover { background:rgba(255,255,255,.88); box-shadow:0 10px 32px rgba(16,47,66,.18); transform:translateY(-1px); }
+.menu-toggle span { display:block; width:17px; height:2px; border-radius:2px; background:#173b52; transition:transform .2s ease, opacity .2s ease; }
+.os-sidebar.menu-open .menu-toggle span:first-child { transform:translateY(7px) rotate(45deg); }
+.os-sidebar.menu-open .menu-toggle span:nth-child(2) { opacity:0; }
+.os-sidebar.menu-open .menu-toggle span:last-child { transform:translateY(-7px) rotate(-45deg); }
+.site-menu-panel { position:absolute; left:60px; bottom:0; top:auto; width:248px; padding:14px; border:1px solid rgba(255,255,255,.7); border-radius:16px; background:rgba(255,255,255,.76); box-shadow:0 18px 50px rgba(16,47,66,.16); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); opacity:0; visibility:hidden; pointer-events:none; transform:translateX(8px); transition:opacity .2s ease, transform .2s ease, visibility .2s ease; }
+.os-sidebar.menu-open .site-menu-panel { opacity:1; visibility:visible; pointer-events:auto; transform:translateX(0); }
+.os-brand { display:flex; align-items:center; gap:10px; padding:3px 4px 13px; border-bottom:1px solid var(--os-line); }
+.os-brand > img { display:block; width:38px; height:38px; flex:0 0 auto; object-fit:cover; border-radius:9px; }
+.os-brand strong { display:block; color:#173b52; font-size:13px; letter-spacing:.02em; }
+.os-brand small { display:block; margin-top:3px; color:#718392; font-size:11px; }
+.os-nav { display:grid; gap:4px; padding-top:10px; }
+.os-nav a { display:flex; align-items:center; min-height:40px; padding:9px 11px; border-radius:9px; color:#36566c; font-size:13px; font-weight:600; text-decoration:none; transition:background .16s ease, color .16s ease; }
+.os-nav a:hover, .os-nav a:focus-visible { outline:none; background:rgba(23,59,82,.08); color:#102f42; }
+.os-content { max-width:1280px; margin:0 auto; }
+.os-content > main { max-width:none; }
+.os-workspace > header { position:relative; top:auto; margin:0; }
+.os-workspace > header .nav { max-width:none; padding:0 34px; }
+.os-content > footer { max-width:calc(100% - 68px); }
+#inicio, #frete, #atendimento, #contato { scroll-margin-top:84px; }
+@media (max-width:720px) {
+  .os-sidebar { left:12px; top:auto; bottom:14px; transform:none; }
+  .menu-toggle { width:46px; height:46px; }
+  .site-menu-panel { left:0; top:auto; bottom:58px; width:min(248px, calc(100vw - 28px)); transform:translateY(8px); }
+  .os-sidebar.menu-open .site-menu-panel { transform:translateY(0); }
+  .os-workspace > header .nav { padding:0 16px; }
+  .os-content > footer { max-width:none; }
+}

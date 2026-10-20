@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RDGLOGEXPRESS | Entregas rápidas</title>
+<meta content="#0d1724" name="theme-color"/>
+<link rel="icon" type="image/png" href="assets/images/rdglogexpress-logo.png"/>
+<meta content="RDGLOGEXPRESS — Pedido que vai. Confiança que fica" property="og:title"/>
+<meta content="Solicite uma entrega, consulte o valor e acompanhe seu atendimento com a RDGLOGEXPRESS." property="og:description"/>
+<meta content="Moto-frete e entregas rápidas para empresas e pessoas, com retirada em qualquer lugar." name="description"/>
+<meta content="marques.dev01@outlook.com" name="contact"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<link href="assets/css/layout.css" rel="stylesheet"/>
+</head>
+<body>
+<aside class="os-sidebar" aria-label="Navegação principal">
+  <button class="menu-toggle" id="site-menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-menu-panel"><span></span><span></span><span></span></button>
+  <div class="site-menu-panel" id="site-menu-panel" aria-hidden="true">
+    <div class="os-brand"><img src="assets/images/rdglogexpress-logo.png" alt=""/><div><strong>RDGLOGEXPRESS</strong><small>Entregas rápidas</small></div></div>
+    <nav class="os-nav" aria-label="Seções do site"><a href="#inicio">Visão geral</a><a href="#frete">Calcular frete</a><a href="#atendimento">Atendimento</a><a href="#contato">Contato</a></nav>
+  </div>
+</aside>
+<div class="os-workspace">
+  
+<div class="os-content">
+    <div id="inicio"></div>
+    <header>
+<div class="nav wrap">
+<div class="logo display"><img class="package-mark-img" src="assets/images/rdglogexpress-logo.png" alt=""/><b>RDGLOG</b>EXPRESS</div>
+<div class="nav-links">
+<a href="#atendimento">Atendimento</a>
+<a href="#contato">Contato</a>
+<a class="tag" href="#frete">Calcular frete</a>
+</div>
+<a class="wa-btn" href="https://wa.me/5511921398732" rel="noopener" target="_blank">
+<span>WhatsApp</span> ↗
+    </a>
+</div>
+</header>
+<main>
+<section class="hero wrap">
+<div class="hero-copy">
+<div class="eyebrow"><span class="dot"></span> ENTREGAS ÁGEIS · ATENDIMENTO HUMANO</div>
+<h1 class="display">Pedido que <em>vai.</em> Confiança que fica.</h1>
+<p>Sua entrega começa com uma rota. Informe os endereços, receba uma estimativa e confirme os próximos passos com nossa equipe.</p>
+<div class="hero-ctas">
+<a class="btn btn-primary" href="#frete">Calcular meu frete</a>
+<a class="btn btn-ghost" href="https://wa.me/5511921398732" rel="noopener" target="_blank">Falar no WhatsApp</a>
+</div>
+<div aria-label="Diferenciais da RDGLOGEXPRESS" class="hero-proof">
+<span><i></i><b>Atendimento humano</b></span>
+<span>✓ Orçamento em poucos passos</span>
+<span>↗ Ordem de serviço em PDF</span>
+</div>
+</div>
+<div aria-label="Operação de entregas" class="hero-panel photo-panel">
+<div class="photo-panel-image"><img alt="Logotipo da RDGLOGEXPRESS" decoding="async" fetchpriority="high" height="800" src="assets/images/rdglogexpress-logo.png" width="800"/></div><div class="hero-panel-top"><span class="panel-kicker">RDGLOGEXPRESS</span><span class="panel-status"><i></i> operação ativa</span></div>
+<div class="panel-route"><span class="route-node pickup"></span><div><small>COLETA</small><strong>Qualquer cidade ou região</strong></div></div>
+<div class="panel-connector"></div>
+<div class="panel-route"><span class="route-node delivery"></span><div><small>ENTREGA</small><strong>Destino sob consulta</strong></div></div>
+<div class="panel-footer"><span>Resposta rápida</span><b>via WhatsApp ↗</b></div>
+</div>
+</section>
+<section class="section wrap" id="frete">
+<span class="label">Orçamento online</span>
+<h2 class="display">Monte sua entrega</h2>
+<p class="section-sub">Informe os endereços e escolha as condições do serviço. O sistema calcula uma estimativa e prepara sua ordem de serviço.</p>
+<div class="calc-card">
+<div class="calc-stepper" id="calc-stepper">
+<div class="calc-step active" data-step="1"><span class="calc-step-num">1</span> Endereços</div>
+<div class="calc-step-line"></div>
+<div class="calc-step" data-step="2"><span class="calc-step-num">2</span> Detalhes</div>
+<div class="calc-step-line"></div>
+<div class="calc-step" data-step="3"><span class="calc-step-num">3</span> Orçamento</div>
+</div>
+<div class="mode-tabs" id="mode-tabs">
+<button class="mode-tab active" data-mode="moto" id="mode-tab-moto" type="button">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="5.5" cy="17.5" r="2.6"></circle><circle cx="18.5" cy="17.5" r="2.6"></circle><path d="M5.5 17.5 9 10h4l2 3h3.5"></path><path d="M9 10 7.5 6.5h3"></path></svg>
+          Moto
+        </button>
+<button class="mode-tab" data-mode="carro" id="mode-tab-carro" type="button">
+<svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 16v-3l2-4.5C6.4 7.4 7.2 7 8 7h8c.8 0 1.6.4 2 1.5L20 13v3"></path><path d="M4 16h16"></path><circle cx="7.5" cy="16" r="1.7"></circle><circle cx="16.5" cy="16" r="1.7"></circle></svg>
+          Carro / Utilitário
+        </button>
+</div>
+<div class="route">
+<span class="pin origin"></span>
+<span class="route-label">Coleta</span>
+<div class="route-line"></div>
+<span class="route-label">Entrega</span>
+<span class="pin dest"></span>
+</div>
+<div class="calc-body">
+<p class="route-helper" id="route-helper">Dica: selecione uma sugestão para calcular a distância com mais precisão.</p>
+<div class="addr-field">
+<label for="origem">Endereço de coleta</label>
+<div class="addr-input-wrap" id="origem-wrap">
+<input aria-describedby="route-helper" autocomplete="street-address" id="origem" placeholder="Rua, número e cidade ou CEP" required="" type="text"/>
+<div class="addr-suggestions" id="origem-suggestions"></div>
+</div>
+</div>
+<div id="stops-container"></div>
+<button class="btn-add-stop" id="btn-add-stop" type="button">+ Adicionar parada intermediária</button>
+<div class="addr-field">
+<label for="destino">Endereço de entrega</label>
+<div class="addr-input-wrap" id="destino-wrap">
+<input aria-describedby="route-helper" autocomplete="street-address" id="destino" placeholder="Rua, número e cidade ou CEP" required="" type="text"/>
+<div class="addr-suggestions" id="destino-suggestions"></div>
+</div>
+</div>
+<p class="calc-status" id="calc-status"></p>
+<div class="field-row" id="peso-row">
+<div class="field">
+<label for="peso">Peso estimado da carga (kg)</label>
+<input id="peso" min="0" placeholder="Ex: 5" step="1" type="number"/>
+</div>
+</div>
+<p class="weight-note" id="peso-note-carro">Serviço de carro exclusivo para transporte de produtos de grande porte e viagens particulares.</p>
+<div class="toggles">
+<label class="toggle" id="toggle-urgente">
+<input id="urgente" type="checkbox"/>
+            Entrega Urgente
+          </label>
+<label class="toggle" id="toggle-agendada">
+<input id="agendada" type="checkbox"/>
+            Coleta Agendada
+          </label>
+</div>
+<fieldset class="payment-box">
+<legend>Forma de pagamento</legend>
+<div class="payment-options">
+<label class="payment-option"><input checked="" name="pagamento" type="radio" value="Pix"/> Pix</label>
+<label class="payment-option"><input name="pagamento" type="radio" value="Cartão à vista"/> Cartão à vista</label>
+<label class="payment-option"><input name="pagamento" type="radio" value="Cartão parcelado"/> Cartão parcelado</label>
+<label class="payment-option"><input name="pagamento" type="radio" value="Dinheiro"/> Dinheiro</label>
+<label class="payment-option"><input name="pagamento" type="radio" value="Faturado — cliente fixo"/> Faturado</label>
+</div>
+<p class="payment-note">A opção faturado é destinada a clientes fixos com cadastro combinado previamente.</p>
+<p class="payment-extra-note" id="payment-extra-note"></p>
+</fieldset>
+<div class="calc-actions">
+<button class="btn btn-calc" id="btn-calcular" type="button">Calcular valor da corrida <span aria-hidden="true">→</span></button>
+</div>
+<div aria-live="polite" class="result" id="result">
+<div class="result-badge">Resumo da sua rota</div>
+<div class="result-rows" id="result-rows"></div>
+<div class="result-total">
+<span>Total estimado</span>
+<span class="mono" id="result-total">R$ 0,00</span>
+</div>
+<p class="result-note">Gere a Ordem de Serviço em PDF antes de solicitar a corrida. Ela funciona como comprovante para qualquer forma de pagamento.</p>
+<div class="calc-actions result-actions">
+<button class="btn btn-ghost" id="btn-pdf-orcamento" type="button">Gerar Ordem de Serviço (PDF)</button>
+<a class="btn btn-primary" href="#" id="wa-pedido" rel="noopener" target="_blank">Pedir este frete no WhatsApp</a>
+</div>
+<p class="pdf-help">A Ordem de Serviço é obrigatória para todos os pedidos. Escolha <strong>Salvar como PDF</strong> e anexe o comprovante no WhatsApp.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section wrap" id="atendimento">
+<span class="label">Confiança em cada etapa</span>
+<h2 class="display">Para você seguir em frente</h2>
+<p class="section-sub">Entregas que chegam com cuidado do Brasil, conforme rota, disponibilidade e necessidade da sua operação.</p>
+<div class="info-grid">
+<div class="info-card">
+<span class="k">Disponibilidade</span>
+<div class="v">Segunda a Sábado</div>
+<div class="v-sub">Horários flexíveis e agendamentos</div>
+</div>
+<div class="info-card">
+<span class="k">Atendimento</span>
+<div class="v">Rotas sob consulta</div>
+<div class="v-sub">Atendimento em qualquer lugar</div>
+</div>
+<div class="info-card">
+<span class="k">Pagamentos</span>
+<div class="v">Pix, cartão &amp; dinheiro</div>
+<div class="v-sub">Faturado disponível para clientes fixos</div>
+</div>
+<div class="info-card">
+<span class="k">Localização Base</span>
+<div class="v">Diadema · SP</div>
+<div class="v-sub">Rotas urbanas e interestaduais</div>
+</div>
+</div>
+<div aria-label="Como funciona a RDGLOG" class="proof-strip">
+<div class="proof-item"><span class="proof-num">03</span><span class="proof-label">etapas para solicitar</span></div>
+<div class="proof-item"><span class="proof-num">02</span><span class="proof-label">opções de veículo</span></div>
+<div class="proof-item"><span class="proof-num">PDF</span><span class="proof-label">ordem de serviço pronta</span></div>
+</div>
+</section>
+</main>
+<footer class="wrap" id="contato">
+<div class="contact-grid">
+<div class="contact-main">
+<h2 class="display">Vamos colocar sua entrega em movimento?</h2>
+<p>Envie os detalhes da sua operação. Nossa equipe retorna pelo WhatsApp e confirma os próximos passos.</p>
+<div class="contact-actions">
+<a class="btn btn-primary" href="https://wa.me/5511921398732" rel="noopener" target="_blank">Chamar no WhatsApp</a>
+<a class="btn btn-ghost" href="mailto:marques.dev01@outlook.com?subject=Consulta%20de%20valores%20de%20corrida%20-%20RDGLOGEXPRESS&amp;body=Ol%C3%A1%2C%20gostaria%20de%20consultar%20um%20valor%20de%20corrida.">Consultar por e-mail</a>
+</div>
+</div>
+<div class="contact-details">
+<span><strong>Contato Direto / WhatsApp</strong></span>
+<span>(11) 92139-8732</span>
+<span><strong>Orçamentos por e-mail</strong></span>
+<a class="contact-email" href="mailto:marques.dev01@outlook.com?subject=Consulta%20de%20valores%20de%20corrida%20-%20RDGLOGEXPRESS&amp;body=Ol%C3%A1%2C%20gostaria%20de%20consultar%20um%20valor%20de%20corrida.">marques.dev01@outlook.com</a>
+<span><strong>Base de Operação</strong></span>
+<span>Operação sob consulta</span>
+</div>
+</div>
+<div class="foot-bottom">
+<span>© 2026 RDGLOGEXPRESS — Entregas Rápidas em Qualquer Lugar</span>
+<button class="btn-text admin-mobile-access" id="admin-mobile-access" type="button">Acesso administrativo</button>
+</div>
+</footer>
+<a aria-label="WhatsApp" class="float-wa" href="https://wa.me/5511921398732" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"></path></svg>
+</a>
+<!-- ADMIN MODAL -->
+<div class="modal-overlay" id="admin-overlay">
+<div class="modal admin-wide">
+<div id="admin-login-view">
+<div class="admin-close-row">
+<h3>Painel de Controle</h3>
+<button aria-label="Fechar" class="admin-x" id="admin-close-1">×</button>
+</div>
+<p class="sub">Acesso exclusivo para configuração de tarifas.</p>
+<div class="field">
+<label for="admin-pass">Senha de acesso</label>
+<input id="admin-pass" placeholder="••••••••" type="password"/>
+</div>
+<p class="modal-error" id="admin-error">Senha incorreta.</p>
+<div class="modal-actions">
+<button class="btn btn-primary btn-sm" id="admin-login-btn">Entrar</button>
+<button class="btn-text" id="admin-cancel-1">Cancelar</button>
+</div>
+</div>
+<div class="is-hidden" id="admin-rates-view">
+<div class="admin-close-row">
+<h3>Tabela de Tarifas</h3>
+<button aria-label="Fechar" class="admin-x" id="admin-close-2">×</button>
+</div>
+<p class="sub">Valores salvos localmente neste navegador.</p>
+<div class="mode-tabs" id="admin-mode-tabs">
+<button class="mode-tab active" data-admin-mode="moto" id="admin-mode-tab-moto" type="button">Moto</button>
+<button class="mode-tab" data-admin-mode="carro" id="admin-mode-tab-carro" type="button">Carro</button>
+</div>
+<div id="admin-rates-moto">
+<div class="field">
+<label for="r-moto-faixa1-ate">Limite da 1ª faixa (km)</label>
+<input id="r-moto-faixa1-ate" min="0.1" step="0.1" type="number"/>
+</div>
+<div class="field">
+<label for="r-moto-faixa1-valor">Valor fixo até o limite da 1ª faixa (R$)</label>
+<input id="r-moto-faixa1-valor" min="0" step="0.01" type="number"/>
+</div>
+<div class="field">
+<label for="r-moto-faixa2-ate">Limite da 2ª faixa (km)</label>
+<input id="r-moto-faixa2-ate" min="0.1" step="0.1" type="number"/>
+</div>
+<div class="field">
+<label for="r-moto-faixa2-valor">Valor fixo da 2ª faixa (R$)</label>
+<input id="r-moto-faixa2-valor" min="0" step="0.01" type="number"/>
+</div>
+<div class="field">
+<label for="r-moto-km-ate50">Valor por km acima da 2ª faixa até 50 km (R$)</label>
+<input id="r-moto-km-ate50" min="0" step="0.01" type="number"/>
+</div>
+<div class="field">
+<label for="r-moto-limite-longa">Limite para viagem longa (km)</label>
+<input id="r-moto-limite-longa" min="0.1" step="0.1" type="number"/>
+</div>
+<div class="field">
+<label for="r-moto-km-acima50">Valor por km em viagem acima do limite (R$)</label>
+<input id="r-moto-km-acima50" min="0" step="0.01" type="number"/>
+</div>
+<div class="field">
+<label for="r-peso-limite">Peso incluso no valor base (kg)</label>
+<input id="r-peso-limite" min="0" step="1" type="number"/>
+</div>
+<div class="field">
+<label for="r-peso-adicional">Adicional por kg excedente (R$)</label>
+<input id="r-peso-adicional" min="0" step="0.5" type="number"/>
+</div>
+</div>
+<div class="is-hidden" id="admin-rates-carro">
+<div class="field">
+<label for="r-carro-faixa1-ate">Limite da 1ª faixa (km)</label>
+<input id="r-carro-faixa1-ate" min="1" step="1" type="number"/>
+</div>
+<div class="field">
+<label for="r-carro-faixa1-valor">Valor fixo da 1ª faixa (R$)</label>
+<input id="r-carro-faixa1-valor" min="0" step="0.5" type="number"/>
+</div>
+<div class="field">
+<label for="r-carro-faixa2-ate">Limite da 2ª faixa (km)</label>
+<input id="r-carro-faixa2-ate" min="1" step="1" type="number"/>
+</div>
+<div class="field">
+<label for="r-carro-faixa2-valor">Valor fixo da 2ª faixa (R$)</label>
+<input id="r-carro-faixa2-valor" min="0" step="0.5" type="number"/>
+</div>
+<div class="field">
+<label for="r-carro-km-ate50">Valor/km acima da 2ª faixa até 50 km (R$)</label>
+<input id="r-carro-km-ate50" min="0" step="0.05" type="number"/>
+</div>
+<div class="field">
+<label for="r-carro-limite-longa">Limite para viagem longa (km)</label>
+<input id="r-carro-limite-longa" min="1" step="1" type="number"/>
+</div>
+<div class="field">
+<label for="r-carro-km-acima50">Valor/km acima do limite (R$)</label>
+<input id="r-carro-km-acima50" min="0" step="0.05" type="number"/>
+</div>
+</div>
+<div>
+<p class="sub">Taxas de Adicionais</p>
+<div class="field">
+<label for="r-urgente">Taxa Entrega Urgente (R$)</label>
+<input id="r-urgente" min="0" step="0.5" type="number"/>
+</div>
+<div class="field">
+<label for="r-agendada">Taxa Coleta Agendada (R$)</label>
+<input id="r-agendada" min="0" step="0.5" type="number"/>
+</div>
+<div class="field">
+<label for="r-parada">Taxa Parada Intermediária (R$)</label>
+<input id="r-parada" min="0" step="0.5" type="number"/>
+</div>
+</div>
+<div>
+<p class="sub">Taxas de Pagamento</p>
+<div class="field">
+<label for="r-cartao-avista">Cartão à vista — acréscimo (R$)</label>
+<input id="r-cartao-avista" min="0" step="0.5" type="number"/>
+</div>
+<div class="field">
+<label for="r-faturado-10">Faturado — acréscimo até 10 dias (R$)</label>
+<input id="r-faturado-10" min="0" step="0.5" type="number"/>
+</div>
+<div class="field">
+<label for="r-faturado-14">Faturado — acréscimo extra do 11º ao 24º dia (R$)</label>
+<input id="r-faturado-14" min="0" step="0.5" type="number"/>
+</div>
+<div class="field">
+<label for="r-faturado-multa">Faturado — multa ao completar 30 dias (R$)</label>
+<input id="r-faturado-multa" min="0" step="0.5" type="number"/>
+</div>
+<div class="field">
+<label for="r-parcelado-pct">Cartão parcelado — taxa (%)</label>
+<input id="r-parcelado-pct" min="0" step="0.1" type="number"/>
+</div>
+<div class="field">
+<label for="r-parcelado-obs">Cartão parcelado — observação adicional (opcional)</label>
+<input id="r-parcelado-obs" maxlength="140" type="text"/>
+</div>
+</div>
+<div class="admin-section">
+<p class="sub">Repasse interno por quilômetro (somente administrador)</p>
+<div class="admin-grid">
+<div class="field"><label>Moto — mínimo/km</label><input id="rep-moto-0" min="0" step="0.05" type="number"/></div>
+<div class="field"><label>Moto — econômico/km</label><input id="rep-moto-1" min="0" step="0.05" type="number"/></div>
+<div class="field"><label>Moto — padrão/km</label><input id="rep-moto-2" min="0" step="0.05" type="number"/></div>
+<div class="field"><label>Moto — intermediário/km</label><input id="rep-moto-3" min="0" step="0.05" type="number"/></div>
+<div class="field"><label>Moto — alto/km</label><input id="rep-moto-4" min="0" step="0.05" type="number"/></div>
+<div class="field"><label>Moto — máximo/km</label><input id="rep-moto-5" min="0" step="0.05" type="number"/></div>
+<div class="field"><label>Carro — mínimo/km</label><input id="rep-carro-0" min="0" step="0.05" type="number"/></div>
+<div class="field"><label>Carro — econômico/km</label><input id="rep-carro-1" min="0" step="0.05" type="number"/></div>
+<div class="field"><label>Carro — padrão/km</label><input id="rep-carro-2" min="0" step="0.05" type="number"/></div>
+<div class="field"><label>Carro — intermediário/km</label><input id="rep-carro-3" min="0" step="0.05" type="number"/></div>
+<div class="field"><label>Carro — alto/km</label><input id="rep-carro-4" min="0" step="0.05" type="number"/></div>
+<div class="field"><label>Carro — máximo/km</label><input id="rep-carro-5" min="0" step="0.05" type="number"/></div>
+</div>
+</div>
+<div class="admin-section">
+<p class="sub">Segurança e alertas administrativos</p>
+<div class="admin-grid">
+<div class="field"><label>Margem mínima de segurança (%)</label><input id="margem-minima" min="0" step="0.1" type="number"/></div>
+</div>
+<p class="internal-note">Alertas de margem funcionam visualmente nesta demonstração e ficam restritos ao painel local. O envio automático por WhatsApp foi removido porque o GitHub Pages não executa backend nem protege tokens.</p>
+</div>
+<div class="admin-section">
+<p class="sub">Simulador de repasse</p>
+<div class="admin-grid">
+<div class="field"><label>Veículo</label><select id="sim-veiculo"><option value="moto">Moto</option><option value="carro">Carro</option></select></div>
+<div class="field"><label>Distância (km)</label><input id="sim-km" min="0" step="0.1" type="number" value="30"/></div>
+<div class="field"><label>Valor cobrado (R$)</label><input id="sim-cliente" min="0" step="0.01" type="number" value="70.50"/></div>
+<div class="field"><label>Repasse por km (R$)</label><input id="sim-repasse-km" min="0" step="0.01" type="number" value="1.70"/></div>
+<div class="field"><label>Paradas</label><input id="sim-paradas" min="0" step="1" type="number" value="0"/></div>
+<div class="field"><label>Peso (kg, opcional)</label><input id="sim-peso" min="0" step="0.1" type="number" value="0"/></div>
+</div>
+<label class="toggle"><input id="sim-urgente" type="checkbox"/> Urgente</label>
+<label class="toggle"><input id="sim-agendada" type="checkbox"/> Agendado</label>
+<button class="btn btn-ghost btn-sm" id="simular-btn" type="button">Calcular repasse</button>
+<div class="sim-result" id="sim-result"></div>
+</div>
+<div class="modal-actions">
+<button class="btn btn-primary btn-sm" id="admin-save-btn">Salvar Tarifas</button>
+<button class="btn-text" id="admin-restore-btn">Restaurar Padrão</button>
+</div>
+<p class="modal-saved" id="admin-saved-msg">Tarifas salvas com sucesso! ✓</p>
+<div>
+<button class="btn-text" id="admin-logout-btn">Sair do Painel</button>
+</div>
+</div>
+</div>
+</div>
+  </div>
+</div>
+
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/app.js"></script>
+</body></html>
